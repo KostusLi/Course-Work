@@ -1,0 +1,567 @@
+// Цветовая схема
+$primary-bg: #2c2c2c;
+$header-bg: #1a1a1a;
+$card-bg: #444;
+$text-color: white;
+$active-color: red;
+$divider-color: #555;
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+// Шрифты
+@font-face {
+    font-family: 'Age';
+    src: url('font/Inkulinati-Regular.otf');
+}
+
+// Базовые стили
+body {
+    background-color: $header-bg;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Age';
+}
+
+// Шапка сайта
+.adapt {
+    background-color: $primary-bg;
+    display: flex;
+    padding: 15px 0;
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+        }
+        
+        font-family: 'Age';
+        font-size: 1.4vw;
+        color: white;
+    }
+    
+    .navigation {
+        font-family: 'Age';
+        font-size: 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            .entering
+            {
+                width: 30px;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s ease;
+                    
+                    &.active {
+                        color: $active-color;
+                    }
+                    
+                    &:hover {
+                        color: $active-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Основной контент
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+// Сетка новостей
+.news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+// Карточка новости
+.news-card {
+    background-color: $card-bg;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: $card-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    
+    .news-banner {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .news-content {
+        padding: 25px;
+        
+        h2 {
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+            color: $active-color;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        
+        .news-meta {
+            font-size: 1rem;
+            color: lighten($card-bg, 40%);
+            margin-bottom: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+            color: $text-color;
+            background-color: #555;
+            padding: 5px 10px 3px ;
+            border-radius: 8px;
+        }
+    }
+}
+
+// Страница полной новости
+.news-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    
+    .news-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+        position: relative;
+        
+        &-content {
+            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        &-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 15px 0;
+            color: $active-color;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+    }
+    
+    .news-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        
+        span {
+            display: flex;
+            align-items: center;
+            
+            &::before {
+                content: '•';
+                margin-right: 8px;
+                color: $active-color;
+            }
+        }
+    }
+    
+    .news-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        
+        &-tag {
+            background: rgba(255,77,77,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid $active-color;
+        }
+    }
+    
+    .news-article {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        font-family: 'Age';
+        font
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            
+            &:first-child {
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: lighten($text-color, 10%);
+            }
+        }
+    }
+}
+
+.news-footer {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .back-button {
+        background: $active-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background: darken($active-color, 10%);
+            transform: translateX(-5px);
+        }
+    }
+    
+    .social-share {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        
+        span {
+            opacity: 0.7;
+        }
+        
+        .social-icon {
+            background: $card-bg;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: $active-color;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+// Бургер-меню и мобильное меню
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    
+    .burger-line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    
+    &.active {
+        .burger-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .burger-line:nth-child(2) {
+            opacity: 0;
+        }
+        .burger-line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-bg, 0.95);
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        
+        li {
+            margin: 20px 0;
+            
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+                
+                &.active {
+                    color: $active-color;
+                }
+            }
+        }
+    }
+    
+    &.active {
+        display: flex;
+    }
+}
+
+// Сообщение об ошибке
+.error {
+    text-align: center;
+    color: $active-color;
+    font-size: 1.5rem;
+    padding: 50px;
+}
+
+// Адаптация под мобильные устройства
+@media (max-width: 1024px) {
+    .adapt {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+        
+        .navigation {
+            font-size: 3vw;
+        }
+    }
+    
+    .news-card {
+        .news-banner {
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .adapt {
+        .navigation {
+            font-size: 4vw;
+        }
+    }
+    
+    .news-card {
+        .news-banner {
+            height: 200px;
+        }
+        
+        .news-content {
+            padding: 20px;
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    
+    .news-detail {
+        .news-hero {
+            &-image {
+                height: 350px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        .news-article {
+            font-size: 1.1rem;
+        }
+    }
+    
+    .news-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
+
+// Бургер-меню (скрыто по умолчанию)
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 101;
+    cursor: pointer;
+    
+    .burger-line {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  // Мобильное меню (скрыто по умолчанию)
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 80px; // Отступ под шапку
+    right: 0;
+    width: 250px;
+    background-color: $primary-bg;
+    z-index: 100;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+      
+      li {
+        padding: 12px 20px;
+        border-bottom: 1px solid $divider-color;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        a {
+          display: flex;
+          align-items: center;
+          color: white;
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &.active {
+            color: $active-color;
+          }
+          
+          &:hover {
+            color: $active-color;
+          }
+          
+          img.enter {
+            width: 18px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    
+    &.active {
+      display: block;
+      animation: slideIn 0.3s ease-out;
+    }
+  }
+  
+  // Анимация появления
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .adapt {
+      position: relative;
+      
+      .navigation {
+        display: none; // Скрываем обычное меню
+      }
+      
+      .burger-menu {
+        display: flex; // Показываем бургер
+        
+        &.active {
+          .burger-line:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+          }
+          .burger-line:nth-child(2) {
+            opacity: 0;
+          }
+          .burger-line:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        }
+      }
+    }
+    
+    .news-card {
+      .news-banner {
+        height: 180px;
+      }
+      
+      .news-content {
+        padding: 15px;
+        
+        h2 {
+          font-size: 1.5rem;
+        }
+        
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  
