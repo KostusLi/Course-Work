@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "title": "Mount and Blade - Warband",
+        "image": "../images/warband.jpg",
+        "trailer": "https://youtu.be/hwGxzdGqEDg?si=hY2RQDg7MYYQqV8s",
+        "developer": "TaleWorlds",
+        "publisher": "TaleWorlds",
+        "realeseYear": "2012",
+        "category": "RPG/Средневековье/Экшен",
+        "localization": "Русская/Английская/Турецкая",
+        "crackStatus": "Вшита",
+        "description": "Mount & Blade: Warband - компьютерная игра в жанре ролевой игры, разработанная турецкой компанией TaleWorlds. Mount & Blade: Warband является аддоном (дополнением) к игре Mount & Blade, которая вышла осенью 2008 года. Официальным издателем игры является Paradox Interactive. Локализацией и издательством в России занимаются совместно Snowball Studios и «1С-СофтКлаб».Основным отличием Mount & Blade: Warband от оригинала является наличие многопользовательского режима (мультиплеера)",
+        "status": "Проверено",
+        "size": "3.43ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5904538"
+    },
+
+    {
+        "id": 2,
+        "title": "Mount and Blade - Bannerlord",
+        "image": "../images/bannerlord.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 3,
+        "title": "The witcher III",
+        "image": "../images/witcher3.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 4,
+        "title": "Darksiders",
+        "image": "../images/darksiders.jpg",
+        "description": "Best game of life "
+    },
+
+    {
+        "id": 5,
+        "title": "Dark Souls II",
+        "image": "../images/darksouls2.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 6,
+        "title": "Dark Souls III",
+        "image": "../images/darksouls3.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 7,
+        "title": "Kingdom Come: Deliverence",
+        "image": "../images/kingdomcome.png",
+        "description": "Best game of life "
+    },
+
+    {
+        "id": 8,
+        "title": "TES IV - Oblivion",
+        "image": "../images/Oblivion.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 9,
+        "title": "Mount and Blade - Prophesy of Pendor",
+        "image": "../images/prophesy1.jpg",
+         "description": "Best game of life"
+    },
+
+    {
+        "id": 10,
+        "title": "Chivalry II",
+        "image": "../images/chivalry1.png",
+         "description": "Best game of life"
+    }
+]

@@ -1,0 +1,172 @@
+// Цветовая схема
+@import 'body';
+
+@font-face {
+    font-family: 'Age';
+    src: url('../font/Inkulinati-Regular.otf');
+}
+
+body {
+    font-family: 'Age';
+    background-color: $header-bg;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    font-family: 'Age';
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $card-bg;
+    border-radius: 10px;
+    box-shadow: $card-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .game-title {
+        font-size: 2rem;
+        color: $hcolor;
+        -webkit-text-stroke: 0.3px black;
+        margin: 0;
+    }
+
+    .game-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .game-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+
+            .game-image {
+                width: 400px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .short-description {
+            display: flex;
+            flex: 1;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            flex-direction: column;
+            height: 100%;
+            align-items: baseline;
+        }
+    }
+
+    .game-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 2px solid $divider-color;
+    }
+
+    .trailer-container {
+        margin-top: 20px;
+        text-align: center;
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+        }
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: $active-color;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background-color: darken($active-color, 10%);
+        }
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    .mark
+    {
+        width: 20px;
+    }
+    .table 
+    {
+        width: 90%;
+        border-collapse: collapse;
+    }
+    .column1
+    {
+        padding: 8px 0px 8px 12px;
+        border: 2px solid black;
+        background-color: #7F7A7A;
+    }
+    .column2
+    { 
+        width: 50%;
+        padding: 8px 0px 8px 12px;
+        border: 2px solid black;
+        background-color: #7F7A7A;
+    }
+}
+
+.download
+{
+    display: flex;
+    justify-content: center;
+    .hreff
+    {
+        .back-button
+        {
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        .game-header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .game-info {
+            align-items: center;
+
+            .game-title {
+                text-align: center;
+            }
+        }
+
+        .short-description {
+            text-align: center;
+        }
+
+        .game-image {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        iframe {
+            height: 250px;
+        }
+    }
+}

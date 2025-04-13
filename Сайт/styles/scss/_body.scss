@@ -1,0 +1,29 @@
+$primary-bg: #2c2c2c;
+$header-bg: #1a1a1a;
+$card-bg: #444;
+$text-color: white;
+$active-color: red;
+$divider-color: #555;
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+$hcolor:rgb(255, 7, 7);
+
+// Шрифты
+@font-face {
+    font-family: 'Age';
+    src: url('/font/Inkulinati-Regular.otf')
+}
+
+// Базовые стили
+body {
+    background-color: $header-bg;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Age';
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
