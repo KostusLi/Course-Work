@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     registerOverlay.innerHTML = `
         <div class="login-modal">
             <button class="close-btn" id="closeRegister">&times;</button>
-            <img src="../images/logo.png" alt="Логотип" class="site-logo">
+            <img src="../images/logo.webp" alt="Логотип" class="site-logo">
             <div class="form-group">
                 <label for="new-username">Логин</label>
                 <input type="text" id="new-username" placeholder="Введите логин">

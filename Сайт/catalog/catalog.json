@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Mount and Blade - Warband",
-        "image": "../images/warband.jpg",
+        "image": "../images/warband.webp",
         "trailer": "https://youtu.be/hwGxzdGqEDg?si=hY2RQDg7MYYQqV8s",
         "developer": "TaleWorlds",
         "publisher": "TaleWorlds",
@@ -19,63 +19,63 @@
     {
         "id": 2,
         "title": "Mount and Blade - Bannerlord",
-        "image": "../images/bannerlord.jpg",
+        "image": "../images/bannerlord.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 3,
         "title": "The witcher III",
-        "image": "../images/witcher3.jpg",
+        "image": "../images/witcher3.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 4,
         "title": "Darksiders",
-        "image": "../images/darksiders.jpg",
+        "image": "../images/darksiders.webp",
         "description": "Best game of life "
     },
 
     {
         "id": 5,
         "title": "Dark Souls II",
-        "image": "../images/darksouls2.jpg",
+        "image": "../images/darksouls2.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 6,
         "title": "Dark Souls III",
-        "image": "../images/darksouls3.jpg",
+        "image": "../images/darksouls3.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 7,
         "title": "Kingdom Come: Deliverence",
-        "image": "../images/kingdomcome.png",
+        "image": "../images/kingdomcome.webp",
         "description": "Best game of life "
     },
 
     {
         "id": 8,
         "title": "TES IV - Oblivion",
-        "image": "../images/Oblivion.jpg",
+        "image": "../images/Oblivion1.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 9,
         "title": "Mount and Blade - Prophesy of Pendor",
-        "image": "../images/prophesy1.jpg",
+        "image": "../images/prophesy1.webp",
          "description": "Best game of life"
     },
 
     {
         "id": 10,
         "title": "Chivalry II",
-        "image": "../images/chivalry1.png",
+        "image": "../images/chivalry1.webp",
          "description": "Best game of life"
     }
 ]

@@ -1,0 +1,104 @@
+
+
+footer
+{
+    background-image:linear-gradient(to bottom, black, $header-bg) ;
+    width: 95%;
+    justify-self: center;
+    border-radius: $border;
+    padding: 30px 15px 30px 15px;
+    margin-top: 20px;
+    .Support
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        a
+        {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-left: 60px;
+            background-color: $card-bg;
+            width: 125px;
+            justify-content:center;
+            border-radius: $border;
+            padding: 10px 0 10px 0;
+            transition: transform 0.1s ease;
+            transition: box-shadow 0.1s ease;
+            &:hover
+            {
+                box-shadow: 0 0 15px white;
+                transform: scale(1.05);
+            }
+            img 
+            {
+                margin-right: 5px;
+                width: 20px;
+            };
+        }
+    }
+
+    .boosty
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        .hboosty
+        {
+            display: flex;
+            align-items: center;
+            background-color: $card-bg;
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 7px 20px 7px 20px;
+            border-radius: $border;
+            transition: transform 0.1s ease;
+            transition: box-shadow 0.1s ease;
+            &:hover
+            {
+                box-shadow: 0 0 15px white;
+                transform: scale(1.05);
+            }
+        img
+        {
+            width: 25px;
+            margin-right: 5px;
+        }
+        }
+    }
+
+    .calling
+    {
+        display:flex;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        align-items: center;
+        .part2
+        {
+            margin-left: 20px;
+            background-color: $card-bg;
+            padding: $bpadd;
+            border-radius: $border;
+        }
+    }
+
+    .phone
+    {
+        display:flex;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        align-items: center;
+        .part4
+        {
+            border-radius: $border;
+            margin-left: 20px;
+            background-color: $card-bg;
+            padding: $bpadd;
+        }
+    }
+}

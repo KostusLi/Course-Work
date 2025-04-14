@@ -1,3 +1,73 @@
 @import 'header';
 @import 'body';
+@import 'footer';
 
+
+.infimag
+{
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(55, 52, 52);
+    width: 98%;
+    font-size: 30px;
+    .divimag
+    {
+    display: flex;
+    justify-self: center;
+    .image
+    {
+        padding-top: 10px;
+        width: 95%;
+        margin: auto;
+    }
+    }
+
+    .call
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+        .name{
+            text-align: center;
+        }
+    }
+
+    .call-href
+    {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .callwithme
+        {
+            width: 200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .href
+        {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            width: 200px;
+            border: 3px solid white;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            .telegram{
+                width: 15%;
+            }
+            .instagram
+            {
+                width: 15%;
+            }
+            .phone
+            {
+                width: 15%;
+            }
+
+        }
+    }
+}

@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <div class="download">
                 <a class="hreff" href="${game.href}">
-                        <button class="button">Скачать</button>
+                        <button class="button">Скачать файл</button>
                 </a>
                 </div>
                 <a href="catalog.html" class="back-button">Назад в каталог</a>
