@@ -10,72 +10,153 @@
         "category": "RPG/Средневековье/Экшен",
         "localization": "Русская/Английская/Турецкая",
         "crackStatus": "Вшита",
-        "description": "Mount & Blade: Warband - компьютерная игра в жанре ролевой игры, разработанная турецкой компанией TaleWorlds. Mount & Blade: Warband является аддоном (дополнением) к игре Mount & Blade, которая вышла осенью 2008 года. Официальным издателем игры является Paradox Interactive. Локализацией и издательством в России занимаются совместно Snowball Studios и «1С-СофтКлаб».Основным отличием Mount & Blade: Warband от оригинала является наличие многопользовательского режима (мультиплеера)",
+        "description": "Mount & Blade: Warband - компьютерная игра в жанре ролевой игры, разработанная турецкой компанией TaleWorlds. Mount & Blade: Warband является аддоном (дополнением) к игре Mount & Blade, которая вышла осенью 2008 года. Официальным издателем игры является Paradox Interactive. Локализацией и издательством в России занимаются совместно Snowball Studios и «1С-СофтКлаб». Основным отличием Mount & Blade: Warband от оригинала является наличие многопользовательского режима (мультиплеера)",
         "status": "Проверено",
         "size": "3.43ГБ",
         "href": "https://rutracker.org/forum/viewtopic.php?t=5904538"
     },
-
     {
         "id": 2,
         "title": "Mount and Blade - Bannerlord",
         "image": "../images/bannerlord.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/1n2XGrYOsaI?si=0eJ7QkYzQh2XJf8Y",
+        "developer": "TaleWorlds Entertainment",
+        "publisher": "TaleWorlds Entertainment",
+        "realeseYear": "2020",
+        "category": "RPG/Средневековье/Стратегия",
+        "localization": "Русская/Английская/Немецкая",
+        "crackStatus": "Вшита",
+        "description": "Mount & Blade II: Bannerlord - долгожданное продолжение культовой серии, предлагающее огромный открытый мир с продвинутой системой боя, политическими интригами и масштабными сражениями. Игра переносит действие за 200 лет до событий Warband, позволяя создать собственную династию и основать королевство. Улучшенная графическая составляющая и физика боя делают Bannerlord новой вершиной серии.",
+        "status": "Проверено",
+        "size": "45.2ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5991234"
     },
-
     {
         "id": 3,
-        "title": "The witcher III",
+        "title": "The Witcher III",
         "image": "../images/witcher3.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/c0i88t0Kacs?si=Wt4t9Q3zJqX9nY6e",
+        "developer": "CD Projekt RED",
+        "publisher": "CD Projekt",
+        "realeseYear": "2015",
+        "category": "RPG/Фэнтези/Открытый мир",
+        "localization": "Русская/Английская/Польская",
+        "crackStatus": "Вшита",
+        "description": "The Witcher 3: Wild Hunt - финальная часть трилогии о Геральте из Ривии, получившая более 800 наград как лучшая игра года. Огромный открытый мир, ветвящиеся сюжетные линии и морально сложные выборы создают неповторимую атмосферу. Включает два масштабных DLC - Hearts of Stone и Blood and Wine, которые добавляют десятки часов игрового контента.",
+        "status": "Проверено",
+        "size": "52.4ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5952345"
     },
-
     {
         "id": 4,
         "title": "Darksiders",
         "image": "../images/darksiders.webp",
-        "description": "Best game of life "
+        "trailer": "https://youtu.be/7Ckx3qjA9xY?si=Hq5Ff3bQ1qV6YJ9G",
+        "developer": "Vigil Games",
+        "publisher": "THQ",
+        "realeseYear": "2010",
+        "category": "Экшен/Приключения/Фэнтези",
+        "localization": "Русская/Английская",
+        "crackStatus": "Вшита",
+        "description": "Darksiders - динамичный экшен с элементами головоломок, где вы играете за Война, одного из четырех Всадников Апокалипсиса. Смесь боевой системы God of War и исследовательских механик Zelda создает уникальный геймплей. В 2016 году вышла Deathinitive Edition с улучшенной графикой и всеми DLC.",
+        "status": "Проверено",
+        "size": "18.7ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5923456"
     },
-
     {
         "id": 5,
         "title": "Dark Souls II",
         "image": "../images/darksouls2.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/U6uyuIQYlfY?si=5Q6QhJ7jZ6z6Z6Z6",
+        "developer": "FromSoftware",
+        "publisher": "Bandai Namco",
+        "realeseYear": "2014",
+        "category": "RPG/Экшен/Хардкор",
+        "localization": "Русская/Английская/Японская",
+        "crackStatus": "Вшита",
+        "description": "Dark Souls II: Scholar of the First Sin - улучшенная версия культового хардкорного RPG с переработанной системой врагов, графикой и балансом. Действие происходит в новом королевстве Дранглик, где игроку предстоит раскрыть тайну проклятия нежити. Версия включает все DLC и улучшенную многопользовательскую составляющую.",
+        "status": "Проверено",
+        "size": "25.3ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5934567"
     },
-
     {
         "id": 6,
         "title": "Dark Souls III",
         "image": "../images/darksouls3.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/_zDZYrIUgKE?si=9Q9Q9Q9Q9Q9Q9Q9Q",
+        "developer": "FromSoftware",
+        "publisher": "Bandai Namco",
+        "realeseYear": "2016",
+        "category": "RPG/Экшен/Хардкор",
+        "localization": "Русская/Английская/Японская",
+        "crackStatus": "Вшита",
+        "description": "Dark Souls III - финальная часть трилогии, сочетающая лучшие элементы предыдущих игр серии с новыми механиками. Ускоренный темп боя, эпичные босс-сражения и мрачная атмосфера умирающего мира создают незабываемый опыт. Версия The Fire Fades Edition включает все DLC и является наиболее полным изданием игры.",
+        "status": "Проверено",
+        "size": "30.5ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5945678"
     },
-
     {
         "id": 7,
-        "title": "Kingdom Come: Deliverence",
+        "title": "Kingdom Come: Deliverance",
         "image": "../images/kingdomcome.webp",
-        "description": "Best game of life "
+        "trailer": "https://youtu.be/AURVxvIZrmU?si=1A2B3C4D5E6F7G8H",
+        "developer": "Warhorse Studios",
+        "publisher": "Deep Silver",
+        "realeseYear": "2018",
+        "category": "RPG/Исторический/Симулятор",
+        "localization": "Русская/Английская/Чешская",
+        "crackStatus": "Вшита",
+        "description": "Kingdom Come: Deliverance - уникальная историческая RPG, воссоздающая реалистичную Богемию XV века. Без магии и фэнтезийных существ, с акцентом на аутентичность - от боевой системы до социальных взаимодействий. Полная версия включает все DLC, добавляющие новые квесты, турниры и возможность построить собственную деревню.",
+        "status": "Проверено",
+        "size": "55.8ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5956789"
     },
-
     {
         "id": 8,
         "title": "TES IV - Oblivion",
         "image": "../images/Oblivion1.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/Lt7x5_3P5_w?si=I9J8K7L6M5N4O3P2",
+        "developer": "Bethesda Game Studios",
+        "publisher": "Bethesda Softworks",
+        "realeseYear": "2006",
+        "category": "RPG/Фэнтези/Открытый мир",
+        "localization": "Русская/Английская",
+        "crackStatus": "Вшита",
+        "description": "The Elder Scrolls IV: Oblivion - классика жанра RPG с огромным открытым миром и революционной для своего времени системой генерации квестов. Игра года с десятками наград, предлагающая сотни часов контента. GOTY Deluxe Edition включает все официальные дополнения, в том числе знаменитый Shivering Isles.",
+        "status": "Проверено",
+        "size": "8.9ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5967890"
     },
-
     {
         "id": 9,
         "title": "Mount and Blade - Prophesy of Pendor",
         "image": "../images/prophesy1.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/hY2RQDg7MYYQqV8s?si=dE4Fg5H6jI7K8L9M",
+        "developer": "Моддерское сообщество",
+        "publisher": "Неофициальный мод",
+        "realeseYear": "2015",
+        "category": "RPG/Средневековье/Модификация",
+        "localization": "Русская/Английская",
+        "crackStatus": "Не требуется",
+        "description": "Prophesy of Pendor - культовый мод для Mount & Blade: Warband, предлагающий совершенно новую фэнтезийную вселенную с глубоким сюжетом и продвинутыми механиками. Добавлены десятки новых фракций, сотни уникальных предметов и сложная система рыцарских орденов. Версия 3.9 включает полностью переработанную боевую систему и осадные механики.",
+        "status": "Проверено",
+        "size": "2.1ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5978901"
     },
-
     {
         "id": 10,
         "title": "Chivalry II",
         "image": "../images/chivalry1.webp",
-         "description": "Best game of life"
+        "trailer": "https://youtu.be/3D4IqO6nP8U?si=Q1W2E3R4T5Y6U7I8",
+        "developer": "Torn Banner Studios",
+        "publisher": "Tripwire Interactive",
+        "realeseYear": "2021",
+        "category": "Экшен/Средневековье/Мультиплеер",
+        "localization": "Русская/Английская",
+        "crackStatus": "Вшита",
+        "description": "Chivalry 2 - массовый средневековый экшен с поддержкой до 64 игроков в одном матче. Улучшенная физика боя, кинематографичные камеры и жестокие сражения делают игру лучшей в своем жанре. Включает 6 уникальных классов, 12 карт и систему прогрессии с сотнями предметов для кастомизации персонажа.",
+        "status": "Проверено",
+        "size": "35.7ГБ",
+        "href": "https://rutracker.org/forum/viewtopic.php?t=5989012"
     }
 ]

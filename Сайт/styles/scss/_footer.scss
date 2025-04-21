@@ -2,7 +2,8 @@
 
 footer
 {
-    background-image:linear-gradient(to bottom, black, $header-bg) ;
+    font-family: sans-serif;
+    background-image:linear-gradient(to bottom, black, $header-bg);
     width: 95%;
     justify-self: center;
     border-radius: $border;
@@ -13,6 +14,10 @@ footer
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        .social
+        {
+        display: flex;
+
         a
         {
             display: flex;
@@ -24,7 +29,7 @@ footer
             width: 125px;
             justify-content:center;
             border-radius: $border;
-            padding: 10px 0 10px 0;
+            padding: 10px 0px 10px 0;
             transition: transform 0.1s ease;
             transition: box-shadow 0.1s ease;
             &:hover
@@ -38,6 +43,8 @@ footer
                 width: 20px;
             };
         }
+    }
+
     }
 
     .boosty
@@ -80,7 +87,7 @@ footer
         .part2
         {
             margin-left: 20px;
-            background-color: $card-bg;
+            border: 2px solid white;
             padding: $bpadd;
             border-radius: $border;
         }
@@ -97,8 +104,51 @@ footer
         {
             border-radius: $border;
             margin-left: 20px;
-            background-color: $card-bg;
+            border: 2px solid white;
             padding: $bpadd;
         }
     }
+
+@media(max-width: 768px)
+{
+    .Support
+    {
+        flex-direction: column;
+        .title
+        {
+            display:flex;
+            justify-content:center ;
+            margin-bottom: 10px;
+        }
+        .social    
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .soc
+            {
+                a
+                {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}    
+
+@media(max-width: 395px)
+{
+    font-size: 0.8rem;
+    .Support
+    {
+        .social
+        {
+            a 
+            {
+                width: 100px;
+            }
+        }
+    }
+}
+
 }

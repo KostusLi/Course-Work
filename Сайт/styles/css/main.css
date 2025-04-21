@@ -1030,6 +1030,7 @@ main {
 }
 
 footer {
+  font-family: sans-serif;
   background-image: linear-gradient(to bottom, black, #1a1a1a);
   width: 95%;
   justify-self: center;
@@ -1042,7 +1043,10 @@ footer .Support {
   align-items: center;
   margin-bottom: 20px;
 }
-footer .Support a {
+footer .Support .social {
+  display: flex;
+}
+footer .Support .social a {
   display: flex;
   align-items: center;
   color: white;
@@ -1052,15 +1056,15 @@ footer .Support a {
   width: 125px;
   justify-content: center;
   border-radius: 20px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0px 10px 0;
   transition: transform 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
-footer .Support a:hover {
+footer .Support .social a:hover {
   box-shadow: 0 0 15px white;
   transform: scale(1.05);
 }
-footer .Support a img {
+footer .Support .social a img {
   margin-right: 5px;
   width: 20px;
 }
@@ -1098,7 +1102,7 @@ footer .calling {
 }
 footer .calling .part2 {
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
   border-radius: 20px;
 }
@@ -1112,15 +1116,41 @@ footer .phone {
 footer .phone .part4 {
   border-radius: 20px;
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
+}
+@media (max-width: 768px) {
+  footer .Support {
+    flex-direction: column;
+  }
+  footer .Support .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .Support .social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .Support .social .soc a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 395px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .Support .social a {
+    width: 100px;
+  }
 }
 
 .infimag {
   margin: auto;
   border-radius: 10px;
   margin-top: 10px;
-  background-color: rgb(55, 52, 52);
+  background-color: #444;
   width: 98%;
   font-size: 30px;
 }
@@ -1146,6 +1176,9 @@ footer .phone .part4 {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.infimag .call-href img {
+  margin-right: 10px;
+}
 .infimag .call-href .callwithme {
   width: 200px;
   width: 100%;
@@ -1161,14 +1194,12 @@ footer .phone .part4 {
   text-align: center;
   border-radius: 20px;
   margin-bottom: 30px;
+  transition: transform 0.2s linear;
 }
-.infimag .call-href .href .telegram {
-  width: 15%;
+.infimag .call-href .href:hover {
+  transform: translateY(-3px);
 }
-.infimag .call-href .href .instagram {
-  width: 15%;
-}
-.infimag .call-href .href .phone {
+.infimag .call-href .href img {
   width: 15%;
 }
 
@@ -1472,6 +1503,7 @@ main {
 }
 
 footer {
+  font-family: sans-serif;
   background-image: linear-gradient(to bottom, black, #1a1a1a);
   width: 95%;
   justify-self: center;
@@ -1484,7 +1516,10 @@ footer .Support {
   align-items: center;
   margin-bottom: 20px;
 }
-footer .Support a {
+footer .Support .social {
+  display: flex;
+}
+footer .Support .social a {
   display: flex;
   align-items: center;
   color: white;
@@ -1494,15 +1529,15 @@ footer .Support a {
   width: 125px;
   justify-content: center;
   border-radius: 20px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0px 10px 0;
   transition: transform 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
-footer .Support a:hover {
+footer .Support .social a:hover {
   box-shadow: 0 0 15px white;
   transform: scale(1.05);
 }
-footer .Support a img {
+footer .Support .social a img {
   margin-right: 5px;
   width: 20px;
 }
@@ -1540,7 +1575,7 @@ footer .calling {
 }
 footer .calling .part2 {
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
   border-radius: 20px;
 }
@@ -1554,8 +1589,34 @@ footer .phone {
 footer .phone .part4 {
   border-radius: 20px;
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
+}
+@media (max-width: 768px) {
+  footer .Support {
+    flex-direction: column;
+  }
+  footer .Support .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .Support .social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .Support .social .soc a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 395px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .Support .social a {
+    width: 100px;
+  }
 }
 
 .news-grid {
@@ -1575,14 +1636,14 @@ footer .phone .part4 {
 }
 .news-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px white;
 }
 .news-card .news-banner {
   width: 100%;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
 }
 .news-card .news-content {
   padding: 25px;
@@ -2201,6 +2262,7 @@ main {
 }
 
 footer {
+  font-family: sans-serif;
   background-image: linear-gradient(to bottom, black, #1a1a1a);
   width: 95%;
   justify-self: center;
@@ -2213,7 +2275,10 @@ footer .Support {
   align-items: center;
   margin-bottom: 20px;
 }
-footer .Support a {
+footer .Support .social {
+  display: flex;
+}
+footer .Support .social a {
   display: flex;
   align-items: center;
   color: white;
@@ -2223,15 +2288,15 @@ footer .Support a {
   width: 125px;
   justify-content: center;
   border-radius: 20px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0px 10px 0;
   transition: transform 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
-footer .Support a:hover {
+footer .Support .social a:hover {
   box-shadow: 0 0 15px white;
   transform: scale(1.05);
 }
-footer .Support a img {
+footer .Support .social a img {
   margin-right: 5px;
   width: 20px;
 }
@@ -2269,7 +2334,7 @@ footer .calling {
 }
 footer .calling .part2 {
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
   border-radius: 20px;
 }
@@ -2283,6 +2348,32 @@ footer .phone {
 footer .phone .part4 {
   border-radius: 20px;
   margin-left: 20px;
-  background-color: #444;
+  border: 2px solid white;
   padding: 15px 20px 15px 20px;
+}
+@media (max-width: 768px) {
+  footer .Support {
+    flex-direction: column;
+  }
+  footer .Support .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .Support .social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .Support .social .soc a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 395px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .Support .social a {
+    width: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

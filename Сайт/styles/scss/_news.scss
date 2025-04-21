@@ -10,6 +10,8 @@
     width: 100%;
 }
 
+
+
 // Карточка новости
 .news-card {
     background-color: $card-bg;
@@ -21,15 +23,18 @@
     
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 16px white;
     }
     
     .news-banner {
         width: 100%;
         height: 450px;
-        object-fit: cover;
-        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
     }
+    
+    
     
     .news-content {
         padding: 25px;
