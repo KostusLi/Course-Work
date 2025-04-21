@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return card;
   }
   
-  fetch('news.json')
+  fetch('/news/news.json')
       .then(response => response.json())
       .then(data => {
           data.forEach(newsItem => {
