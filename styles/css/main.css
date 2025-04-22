@@ -162,12 +162,15 @@
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -230,6 +233,7 @@ body {
   flex-direction: column;
   height: 100%;
   align-items: baseline;
+  font-family: "Gotic";
 }
 .game-container .game-description {
   font-size: 1.1rem;
@@ -237,6 +241,7 @@ body {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 2px solid #555;
+  font-family: "Gotic";
 }
 .game-container .trailer-container {
   margin-top: 20px;
@@ -266,8 +271,6 @@ body {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: black;
   margin-top: 40px;
 }
 .info .mark {
@@ -281,12 +284,14 @@ body {
   padding: 8px 0px 8px 12px;
   border: 2px solid black;
   background-color: #7F7A7A;
+  border-radius: 15px;
 }
 .info .column2 {
   width: 50%;
   padding: 8px 0px 8px 12px;
   border: 2px solid black;
   background-color: #7F7A7A;
+  border-radius: 15px;
 }
 
 .download {
@@ -309,6 +314,9 @@ body {
   color: white;
   transition: transform 0.1s linear;
   box-shadow: 0 10px 0 0 rgb(1, 58, 1);
+}
+.download .hreff .button:hover {
+  transform: translateY(-4px);
 }
 .download .hreff .button:active {
   transform: translateY(10px);
@@ -342,12 +350,15 @@ body {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -623,12 +634,15 @@ main {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -665,7 +679,7 @@ main {
 .catalog-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
-  gap: 40px;
+  gap: 20px;
   padding: 20px;
 }
 .catalog-container .catalog-card {
@@ -676,6 +690,7 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  font-size: 0.9rem;
 }
 .catalog-container .catalog-card:hover {
   transform: translateY(-5px) scale(1.03);
@@ -734,12 +749,15 @@ main {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -1015,12 +1033,15 @@ main {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -1207,12 +1228,15 @@ footer .phone .part4 {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -1488,12 +1512,15 @@ main {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -1735,13 +1762,13 @@ footer .phone .part4 {
 .news-detail .news-article {
   font-size: 1.2rem;
   line-height: 1.8;
-  font-family: "Age";
 }
-.news-detail .news-article font p {
+.news-detail .news-article p {
   margin-bottom: 20px;
   text-align: justify;
+  font-family: "Gotic";
 }
-.news-detail .news-article font p:first-child {
+.news-detail .news-article p:first-child {
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
@@ -1966,12 +1993,15 @@ footer .phone .part4 {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {
@@ -2247,12 +2277,15 @@ main {
   font-family: "Age";
   src: url("/font/Inkulinati-Regular.otf");
 }
+@font-face {
+  font-family: "Gotic";
+  src: url("/font/Gotic.otf");
+}
 body {
   background-color: #1a1a1a;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Age";
 }
 
 main {

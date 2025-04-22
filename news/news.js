@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       
       card.addEventListener('click', () => {
-          window.location.href = `news-detail.html?id=${newsItem.id}`;
+          window.location.href = `/news/news-detail.html?id=${newsItem.id}`;
       });
       
       return card;

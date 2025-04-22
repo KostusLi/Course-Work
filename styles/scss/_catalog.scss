@@ -35,7 +35,7 @@
   .catalog-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-    gap: 40px;
+    gap: 20px;
     padding: 20px;
 
     .catalog-card {
@@ -46,7 +46,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       position: relative; 
-      
+      font-size: 0.9rem;
       &:hover {
         transform: translateY(-5px) scale(1.03);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
