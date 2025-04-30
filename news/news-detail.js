@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                             <div class="news-tags">${tagsHTML}</div>
                         </div>
-                        <img src="${newsItem.image}" alt="${newsItem.title}" class="news-hero-image">
+                        <div id="slider">
+                            <img src="${newsItem.image}" alt="${newsItem.title}" class="news-hero-image">
+                            <img src="${newsItem.image1}" alt="${newsItem.title}" class="news-hero-image">
+                            <img src="${newsItem.image2}" alt="${newsItem.title}" class="news-hero-image">
+                        </div>
                     </div>
                     <div class="news-article">
                         <p class="news-intro">${newsItem.description}</p>
@@ -32,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ).join('')}
                     </div>
                 `;
+                initSlider();
             } else {
                 newsDetail.innerHTML = '<p class="error">Новость не найдена</p>';
             }
@@ -40,4 +45,21 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error loading news:', error);
             newsDetail.innerHTML = '<p class="error">Ошибка загрузки новости</p>';
         });
+
+        function initSlider() {
+            const slider = document.getElementById('slider');
+            const images = slider.querySelectorAll('.news-hero-image');
+            let currentIndex = 0;
+          
+            function nextSlide() {
+              images[currentIndex].style.transform = 'translateX(+100%)';
+              
+              const nextIndex = (currentIndex + 1) % images.length;
+              images[nextIndex].style.transform = 'translateX(0)';
+              
+              currentIndex = nextIndex;
+            }
+          
+            setInterval(nextSlide, 6000);
+          }
 });

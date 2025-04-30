@@ -28,7 +28,6 @@ body {
     .game-title {
         font-size: 2rem;
         color: $hcolor;
-        -webkit-text-stroke: 0.3px black;
         margin: 0;
     }
 
@@ -96,6 +95,35 @@ body {
             background-color: darken($active-color, 10%);
         }
     }
+}
+
+.demand
+{
+    display: flex;
+    justify-content: space-around;
+    .demand_1
+    {
+        flex-direction: column;
+        .head{
+            color: rgb(10, 135, 10);
+            font-size: 1.4rem;
+        }
+        .headp{
+
+            margin-top: -10px;
+            p{
+            display: inline-block;
+            }
+
+            .head1
+            {
+                color: rgb(255, 0, 0);
+                font-size: 1.3rem;
+            }
+        }
+    }
+    
+
 }
 
 .info{

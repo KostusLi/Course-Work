@@ -179,6 +179,30 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "Age";
   src: url("../font/Inkulinati-Regular.otf");
@@ -206,7 +230,6 @@ body {
 .game-container .game-title {
   font-size: 2rem;
   color: rgb(255, 7, 7);
-  -webkit-text-stroke: 0.3px black;
   margin: 0;
 }
 .game-container .game-header {
@@ -265,6 +288,28 @@ body {
 }
 .game-container .back-button:hover {
   background-color: #cc0000;
+}
+
+.demand {
+  display: flex;
+  justify-content: space-around;
+}
+.demand .demand_1 {
+  flex-direction: column;
+}
+.demand .demand_1 .head {
+  color: rgb(10, 135, 10);
+  font-size: 1.4rem;
+}
+.demand .demand_1 .headp {
+  margin-top: -10px;
+}
+.demand .demand_1 .headp p {
+  display: inline-block;
+}
+.demand .demand_1 .headp .head1 {
+  color: rgb(255, 0, 0);
+  font-size: 1.3rem;
 }
 
 .info {
@@ -365,6 +410,30 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .adapt {
@@ -649,6 +718,30 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @keyframes slideIn {
@@ -766,6 +859,30 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .adapt {
   background-color: #2c2c2c;
   display: grid;
@@ -1050,9 +1167,33 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 footer {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, black, #1a1a1a);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #1a1a1a);
   width: 95%;
   justify-self: center;
   border-radius: 20px;
@@ -1245,6 +1386,30 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .adapt {
   background-color: #2c2c2c;
   display: grid;
@@ -1529,9 +1694,33 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 footer {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, black, #1a1a1a);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #1a1a1a);
   width: 95%;
   justify-self: center;
   border-radius: 20px;
@@ -1718,11 +1907,19 @@ footer .phone .part4 {
 }
 .news-detail .news-hero-image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: absolute; /* Все изображения на одном месте */
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out; /* Анимация сдвига */
+}
+.news-detail .news-hero-image:first-child {
+  transform: translateX(0);
+}
+.news-detail .news-hero-image:not(:first-child) {
+  transform: translateX(100%);
 }
 .news-detail .news-hero h1 {
   font-size: 3rem;
@@ -1730,6 +1927,13 @@ footer .phone .part4 {
   color: red;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   line-height: 1.2;
+}
+.news-detail .news-hero #slider {
+  width: 100%;
+  height: 500px; /* Фиксированная высота */
+  position: relative; /* Для позиционирования изображений */
+  overflow: hidden; /* Скрываем всё за границами */
+  border-radius: 8px;
 }
 .news-detail .news-meta {
   display: flex;
@@ -2010,6 +2214,30 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .adapt {
   background-color: #2c2c2c;
   display: grid;
@@ -2294,9 +2522,33 @@ main {
   padding: 20px;
 }
 
+.account {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.account #accountPanel {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+}
+.account #accountPanel button {
+  font-family: "Age";
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 footer {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, black, #1a1a1a);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), #1a1a1a);
   width: 95%;
   justify-self: center;
   border-radius: 20px;

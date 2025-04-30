@@ -43,6 +43,55 @@ document.addEventListener('DOMContentLoaded', function () {
                         : "<p>Трейлер отсутствует.</p>"}
                 </div>
                 
+                <div class="demand">
+                    <div class="demand_1">
+                        <div class="head">Минимальные</div>
+                        <div class="headp">
+                        <p class="head1">ОС: </p> 
+                        <p>${game.OC1}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1" >Процессор: </p> 
+                        <p>${game.processor1}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Оперативная память: </p> 
+                        <p>${game.operative1}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Видеокарта: </p> 
+                        <p>${game.videocard1}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Место на диске: </p> 
+                        <p>${game.memory1}</p>
+                        </div>
+                    </div>
+                    <div class="demand_1">
+                        <div class="head">Рекомендуемые</div>
+                        <div class="headp">
+                        <p class="head1">ОС: </p> 
+                        <p>${game.OC2}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1" >Процессор: </p> 
+                        <p>${game.processor2}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Оперативная память: </p> 
+                        <p>${game.operative2}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Видеокарта: </p> 
+                        <p>${game.videocard2}</p>
+                        </div>
+                        <div class="headp">
+                        <p class="head1">Место на диске: </p> 
+                        <p>${game.memory2}</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="info">
                     <table class="table">
                         <tr class="stroke">

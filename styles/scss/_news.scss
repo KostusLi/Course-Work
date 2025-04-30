@@ -88,18 +88,38 @@
         
         &-image {
             width: 100%;
-            height: 500px;
+            height: 100%;
             object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: absolute; /* Все изображения на одном месте */
+            top: 0;
+            left: 0;
+            transition: transform 0.5s ease-in-out; /* Анимация сдвига */
         }
         
+        &-image:first-child
+        {
+            transform: translateX(0);
+        }
+
+        &-image:not(:first-child) {
+            transform: translateX(100%);
+        }
+
         h1 {
             font-size: 3rem;
             margin: 0 0 15px 0;
             color: $active-color;
             text-shadow: 0 2px 5px rgba(0,0,0,0.5);
             line-height: 1.2;
+        }
+
+        #slider 
+        {
+            width: 100%;
+            height: 500px; /* Фиксированная высота */
+            position: relative; /* Для позиционирования изображений */
+            overflow: hidden; /* Скрываем всё за границами */
+            border-radius: 8px;
         }
     }
     

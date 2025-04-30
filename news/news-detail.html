@@ -12,28 +12,67 @@
         <div class="logo">
             <a href="/index.html"><img src="../images/logo.webp" alt="Логотип"></a>
         </div>
+        <div class="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
         <div class="navigation">
             <nav>
                 <ul>
-                    <li><a href="/index.html">Новости</a></li>
+                    <li><a href="/index.html" class="active">Новости</a></li>
                     <li><a href="../catalog/catalog.html">Каталог</a></li>
                     <li><a href="../aboutDeveloper/developer.html">О разработчике</a></li>
-                    <li><a href="#"><img class="enter">Войти</a></li>
+                    <li><a href="#" id="loginBtn"><img class="entering" src="../images/door1.webp">Войти</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="mobile-nav"> <!-- Мобильное меню (скрыто по умолчанию) -->
+            <nav>
+              <ul>
+                <li><a href="index.html" class="active">Новости</a></li>
+                <li><a href="/catalog/catalog.html">Каталог</a></li>
+                <li><a href="/aboutDeveloper/developer.html">О разработчике</a></li>
+                <li><a href="#" id="loginBtnMobile">Войти</a></li>
+              </ul>
+            </nav>
+          </div>
     </header>
+    <div class="account">
+        <div id="accountPanel" style="display: none;">
+          <p id="welcomeMessage"></p>
+          <button id="logoutBtn">Выйти</button>
+        </div>
+    </div>
     <main>
         <article id="news-detail" class="news-detail"></article>
         <div class="news-footer">
             <a href="/index.html" class="back-button">← Все новости</a>
             <div class="social-share">
                 <span>Поделиться:</span>
-                <a href="#" class="social-icon">VK</a>
-                <a href="#" class="social-icon">TG</a>
-                <a href="#" class="social-icon">IN</a>
+                <a href="https://vk.com/feed" class="social-icon">VK</a>
+                <a href="https://web.telegram.org" class="social-icon">TG</a>
+                <a href="https://www.instagram.com" class="social-icon">IN</a>
             </div>
         </div>
+        <div class="login-modal-overlay" id="loginOverlay">
+            <div class="login-modal">
+                <button class="close-btn" id="closeLogin">&times;</button>
+                <img src="../images/logo.webp" alt="Логотип" class="site-logo">
+                <div class="form-group">
+                    <label for="username">Логин</label>
+                    <input type="text" id="username" placeholder="Введите логин">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль">
+                </div>
+                <div class="buttons-group">
+                    <button id="login-btn"  class="login-btn">Войти</button>
+                    <button class="register-btn">Регистрация</button>
+                </div>
+            </div>
+        </div> 
     </main>
     <footer>
         <div class="Support">
@@ -58,6 +97,9 @@
       </div>
       <div>&copy 2025 - ...</div>
       </footer>
-    <script src="news-detail.js"></script>
+        <script src="/enter/auth-modal.js"></script>
+        <script src="news-detail.js"></script>
+        <script src="/registration/register-modal.js"></script>
+        <script src="menu.js"></script>
 </body>
 </html>

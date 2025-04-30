@@ -36,6 +36,12 @@
           </nav>
         </div>
       </div>
+      <div class="account">
+      <div id="accountPanel" style="display: none;">
+        <p id="welcomeMessage"></p>
+        <button id="logoutBtn">Выйти</button>
+      </div>
+      </div>
     <main>
         <div id="news-container" class="news-grid"></div>
     </main>
@@ -52,11 +58,11 @@
               <input type="password" id="password" placeholder="Введите пароль">
           </div>
           <div class="buttons-group">
-              <button class="login-btn">Войти</button>
+              <button id="login-btn"  class="login-btn">Войти</button>
               <button class="register-btn">Регистрация</button>
           </div>
       </div>
-  </div>  
+  </div>
   <footer>
     <div class="Support">
     <div class="title">Поддержка Chivalry (по вопросам писать сюда): </div>
@@ -80,7 +86,7 @@
   </div>
   <div>&copy 2025 - ...</div>
   </footer>
-<script src="/enter/auth-modal.js"></script>
+    <script src="/enter/auth-modal.js"></script>
     <script src="/news/news.js"></script>
     <script src="/news/menu.js"></script>
     <script src="/registration/register-modal.js"></script>

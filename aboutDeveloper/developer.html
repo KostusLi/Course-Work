@@ -29,14 +29,19 @@
           <nav>
             <ul>
               <li><a href="/index.html">Новости</a></li>
-              <li><a href="../catalog/catalog.html" class="active">Каталог</a></li>
-              <li><a href="../aboutDeveloper/developer.html">О разработчике</a></li>
+              <li><a href="../catalog/catalog.html">Каталог</a></li>
+              <li><a href="../aboutDeveloper/developer.html" class="active">О разработчике</a></li>
               <li><a href="#" id="loginBtnMobile">Войти</a></li>
             </ul>
           </nav>
         </div>
       </div>
-
+      <div class="account">
+        <div id="accountPanel" style="display: none;">
+          <p id="welcomeMessage"></p>
+          <button id="logoutBtn">Выйти</button>
+        </div>
+      </div>
       <div class="login-modal-overlay" id="loginOverlay">
         <div class="login-modal">
             <button class="close-btn" id="closeLogin">&times;</button>
@@ -50,11 +55,11 @@
                 <input type="password" id="password" placeholder="Введите пароль">
             </div>
             <div class="buttons-group">
-                <button class="login-btn">Войти</button>
+                <button id="login-btn"  class="login-btn">Войти</button>
                 <button class="register-btn">Регистрация</button>
             </div>
         </div>
-    </div>  
+    </div> 
     <div class="infimag">
     <div class="divimag">
       <img class="image" src="/images/developer.webp">
@@ -80,8 +85,8 @@
     </div>
     <div>&copy 2025 - ...</div>
     </footer>
-      <script src="../news/menu.js"></script>
       <script src="/registration/register-modal.js"></script>
       <script src="/enter/auth-modal.js"></script>
+      <script src="../news/menu.js"></script>
 </body>
 </html>

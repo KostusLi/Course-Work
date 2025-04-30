@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(registerOverlay);
 
     const registerBtn = document.querySelector(".register-btn");
+    const registerConfirmBtn = registerOverlay.querySelector(".register-confirm-btn");
     const closeRegister = document.getElementById("closeRegister");
 
     registerBtn.addEventListener("click", (event) => {
@@ -44,4 +45,30 @@ document.addEventListener("DOMContentLoaded", () => {
             registerOverlay.classList.remove("active");
         }
     });
+
+    registerConfirmBtn.addEventListener("click", () => {
+        const newUsername = document.getElementById("new-username").value.trim();
+        const newPassword = document.getElementById("new-password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
+    
+        if (!newUsername || !newPassword || !confirmPassword) {
+            alert("Пожалуйста, заполните все поля!");
+            return;
+        }
+    
+        if (newPassword !== confirmPassword) {
+            alert("Пароли не совпадают!");
+            return;
+        }
+    
+        // Сохраняем логин и пароль в cookie (на 7 дней)
+        document.cookie = `username=${encodeURIComponent(newUsername)}; path=/; max-age=${60 * 60 * 24 * 7}`;
+        document.cookie = `password=${encodeURIComponent(newPassword)}; path=/; max-age=${60 * 60 * 24 * 7}`;
+    
+        alert("Регистрация прошла успешно!");
+    
+        // Скрываем окно регистрации
+        registerOverlay.classList.remove("active");
+    });
+
 });
