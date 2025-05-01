@@ -74,10 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutBtn.addEventListener("click", () => {
         deleteCookie('username');
         deleteCookie('password');
-        location.reload(); // перезагрузка страницы
+        location.reload();
     });
 
-    // Проверяем при загрузке страницы: если есть сохранённый логин — сразу показываем личный кабинет
     const autoLoginUsername = getCookie('username');
     const autoLoginPassword = getCookie('password');
 

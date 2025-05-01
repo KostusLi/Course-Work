@@ -95,7 +95,6 @@
     }
 }
 
-// Бургер-меню и мобильное меню
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -166,7 +165,6 @@
     }
 }
 
-// Сообщение об ошибке
 .error {
     text-align: center;
     color: $active-color;
@@ -220,7 +218,6 @@
     }
   }
   
-  // Мобильное меню (скрыто по умолчанию)
   .mobile-nav {
     display: none;
     position: fixed;
@@ -276,7 +273,7 @@
     }
   }
   
-  // Анимация появления
+
   @keyframes slideIn {
     from {
       transform: translateX(100%);
@@ -291,11 +288,11 @@
       position: relative;
       
       .navigation {
-        display: none; // Скрываем обычное меню
+        display: none;
       }
       
       .burger-menu {
-        display: flex; // Показываем бургер
+        display: flex;
         
         &.active {
           .burger-line:nth-child(1) {

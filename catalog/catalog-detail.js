@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const gameInfoContainer = document.getElementById('game-info');
 
-    // Получаем id из URL
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('id');
 

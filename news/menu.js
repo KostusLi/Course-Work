@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.toggle('active');
       mobileNav.classList.toggle('active');
       
-      // Блокировка скролла
       if (mobileNav.classList.contains('active')) {
           document.body.style.overflow = 'hidden';
       } else {
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
   
-  // Закрытие меню при клике на ссылку
   const navLinks = document.querySelectorAll('.mobile-nav a');
   navLinks.forEach(link => {
       link.addEventListener('click', function() {
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
   
-  // Закрытие меню при клике вне его области
   document.addEventListener('click', function(e) {
       if (!e.target.closest('.burger-menu') && 
           !e.target.closest('.mobile-nav') &&

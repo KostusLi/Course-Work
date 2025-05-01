@@ -1,22 +1,21 @@
-// Фон затемнения
+
 .login-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); // Затемнение
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 
     &.active {
-        display: flex; // Показываем при активации
+        display: flex;
     }
 }
 
-// Само модальное окно
 .login-modal {
     background-color: #1e1e1e;
     border-radius: 10px;
@@ -32,7 +31,7 @@
     }
 }
 
-// Кнопка закрытия
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -48,7 +47,6 @@
     }
 }
 
-// Поля ввода
 .form-group {
     margin-bottom: 15px;
     display: flex;
@@ -83,7 +81,7 @@
     }
 }
 
-// Кнопки
+
 .buttons-group {
     display: flex;
     gap: 10px;
@@ -140,7 +138,6 @@
     }
 }
 
-/* 📌 Адаптация для экранов меньше 480px */
 @media (max-width: 480px) {
     .login-modal {
         width: 100%;

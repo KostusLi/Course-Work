@@ -61,13 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     
-        // Сохраняем логин и пароль в cookie (на 7 дней)
         document.cookie = `username=${encodeURIComponent(newUsername)}; path=/; max-age=${60 * 60 * 24 * 7}`;
         document.cookie = `password=${encodeURIComponent(newPassword)}; path=/; max-age=${60 * 60 * 24 * 7}`;
     
         alert("Регистрация прошла успешно!");
     
-        // Скрываем окно регистрации
         registerOverlay.classList.remove("active");
     });
 

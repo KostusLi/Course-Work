@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h3>${game.title}</h3>
             `;
 
-            // Добавляем обработчик клика на всю карточку
             card.addEventListener('click', function () {
                 window.location.href = `catalog-detail.html?id=${game.id}`;
             });
