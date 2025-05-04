@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div class="short-description">
                         <p><strong>Разработчик:</strong> ${game.developer || "Неизвестно"}</p>
-                        <p><strong>Год выхода:</strong> ${game.releaseYear || "Неизвестно"}</p>
+                        <p><strong>Год выхода:</strong> ${game.realeseYear || "Неизвестно"}</p>
                         <p><strong>Категория:</strong> ${game.category || "Неизвестно"}</p>
                         <p><strong>Издатель:</strong> ${game.publisher || "Неизвестно"}</p>
                         <p><strong>Локализация:</strong> ${game.localization || "Неизвестно"}</p>
