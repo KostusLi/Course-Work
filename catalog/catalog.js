@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         filteredGames.forEach(game => {
             const card = document.createElement('div');
             card.className = 'catalog-card';
-            card.dataset.id = game.id; // Сохраняем ID игры в атрибуте
+            card.dataset.id = game.id;
             
             card.innerHTML = `
                 <img src="${game.image}" alt="${game.title}">

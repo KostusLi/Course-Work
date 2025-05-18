@@ -127,44 +127,6 @@
     }
 }
 
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($primary-bg, 0.95);
-    z-index: 100;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-        
-        li {
-            margin: 20px 0;
-
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.5rem;
-                
-                &.active {
-                    color: $active-color;
-                }
-            }
-        }
-    }
-    
-    &.active {
-        display: flex;
-    }
-}
-
 .error {
     text-align: center;
     color: $active-color;
@@ -221,7 +183,7 @@
   .mobile-nav {
     display: none;
     position: fixed;
-    top: 80px; // Отступ под шапку
+    top: 80px;
     right: 0;
     width: 250px;
     background-color: $primary-bg;
