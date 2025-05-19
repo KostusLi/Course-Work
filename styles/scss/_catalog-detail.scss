@@ -88,7 +88,7 @@ body {
         color: white;
         text-decoration: none;
         border-radius: 5px;
-        transition: background 0.3s ease;
+        transition: background-color 0.3s ease;
 
         &:hover {
             background-color: darken($active-color, 10%);

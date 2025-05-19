@@ -19,12 +19,12 @@ $bpadd:15px 20px 15px 20px;
     src: url('/font/Gotic.otf');
 }
 
-// Базовые стили
 body {
     background-color: $header-bg;
     color: $text-color;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 main {
